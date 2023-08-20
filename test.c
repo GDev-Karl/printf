@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * test - format character, stirngs and percentage
+ * @format: format that can influence output
+ * @index: the index of the character or a format symbol
+ * @args: arguments list
+ * 
+ * Return: printed characters
+*/
 int test(const char *format, int index, va_list args)
 {
     char character = format[index];

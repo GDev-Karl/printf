@@ -23,7 +23,6 @@ int test(const char *format, va_list args)
 			printed_chars += print_char("%");
 			break;
 		default:
-			printed_chars += print_char('?');
 			break;
 	}
 	return (printed_chars);

@@ -9,7 +9,7 @@
 
 int _printf_decimal(const char *format, ...)
 {
-	int chara_count;
+	int chara_count = 0;
 	va_list list;
 
 	if (format == NULL)
@@ -17,7 +17,7 @@ int _printf_decimal(const char *format, ...)
 	va_start(list, format);
 	while (*format)
 	{
-		if (*format == '%')
+		if (*format != '%')
 		{
 			write(1, format, 1);
 			chara_count++;

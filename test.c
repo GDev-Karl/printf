@@ -8,12 +8,11 @@
  *
  * Return: printed characters
  */
-int test(const char *format, int index, va_list args)
+int test(const char *format, va_list args)
 {
-	char character = format[index];
 	int printed_chars = 0;
 
-	switch (character)
+	switch (*format)
 	{
 		case 'c':
 			printed_chars += print_char((char)va_arg(args, int));

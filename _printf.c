@@ -13,7 +13,7 @@ int _printf(const char *format, ...)
 	int printed_char = 0;
 
 	if (format == NULL)
-		return (-1);
+		return (0);
 
 	va_start(args, format);
 

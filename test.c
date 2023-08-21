@@ -23,6 +23,8 @@ int test(const char *format, va_list args)
 			printed_chars += print_percent();
 			break;
 		default:
+			printed_chars += print_percent();
+			printed_chars += print_char(*format++);
 			break;
 	}
 	return (printed_chars);

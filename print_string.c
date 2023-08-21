@@ -5,22 +5,20 @@
  * @str: string to print
  *
  * Return: the lenght of the string printed
-*/
+ */
 int print_string(char *str)
 {
 
 	int len = 0;
 
-	if (str == NULL)
+	if (str != NULL)
 	{
-		write(1, str, 0);
+		while (str[len])
+		{
+			len++;
+		}
+		write(1, str, len);
 	}
-
-	while (str[len])
-	{
-		len++;
-	}
-	write(1, str, len);
 
 	return (len);
 }

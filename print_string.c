@@ -8,13 +8,26 @@
  */
 int print_string(char *str)
 {
+    int len = 0;
+    char *str2 = "(null)";
 
-	int len = 0;
+    if (str == NULL)
+    {
+        while (*str2)
+        {
+            write(1, str2, 1);
+            str2++;
+        }
+    }
+    else
+    {
+        while (*str != '\0')
+        {
+            write(1, str, 1);
+            str++;
+            len++;
+        }
+    }
 
-	while (*str != '\0')
-	{
-		write(1, str, 1);
-		len++;
-	}
-	return (len);
+    return len;
 }

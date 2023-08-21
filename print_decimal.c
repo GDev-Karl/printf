@@ -29,7 +29,7 @@ int _printf_decimal(const char *format, ...)
 			if (*format == '\0')
 				break;
 			if (*format  == '%')
-				chara_count = chara_count + print_percent(*format);
+				chara_count = chara_count + print_percent();
 			if (*format  == 'd')
 				chara_count = chara_count + print_int(*format);
 			if (*format  == 'i')

@@ -12,7 +12,9 @@ int print_string(char *str)
 	int len = 0;
 
 	if (str == NULL)
-		return (0);
+	{
+		write(1, str, 0);
+	}
 
 	while (str[len])
 	{

@@ -21,8 +21,7 @@ int _printf(const char *format, ...)
 	{
 		if (*format != '%')
 		{
-			write(1, format, 1);
-			printed_char += 1;
+			printed_char += print_char(*format);
 		}
 		else
 		{

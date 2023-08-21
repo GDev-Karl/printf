@@ -22,6 +22,9 @@ int test(const char *format, va_list args)
 		case '%':
 			printed_chars += print_percent();
 			break;
+		case ' ':
+			printed_chars -= 1;
+			break;
 		default:
 			printed_chars += print_percent();
 			printed_chars += print_char(*format++);

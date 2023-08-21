@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _printf - produces output according to a format
+ * _printf_decimal - produces output according to a format
  * @format: character string
  * @chara_count: number of characters
  *
@@ -8,7 +8,7 @@
  * the null byte used to end output to strings
  */
 
-int _printf(const char *format, ...)
+int _printf_decimal(const char *format, ...)
 {
 	int chara_count;
 	va_list list;

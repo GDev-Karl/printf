@@ -11,5 +11,6 @@ int print_percent(void);
 int print_char(char ch);
 int print_dec(int d);
 int print_int(int i);
+int _printf_decimal(const char *format, ...);
 
 #endif

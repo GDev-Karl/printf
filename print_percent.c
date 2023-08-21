@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_percent - print a symbol percentage
+ * print_percent - print the percentage sign
  *
  * Return: 1 success
 */

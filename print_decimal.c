@@ -2,7 +2,6 @@
 /**
  * _printf_decimal - produces output according to a format
  * @format: character string
- * @chara_count: number of characters
  *
  * Return: characters printed excluding
  * the null byte used to end output to strings

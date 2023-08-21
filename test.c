@@ -3,7 +3,6 @@
 /**
  * test - format character, strings, and percentage
  * @format: format that can influence output
- * @index: the index of the character or a format symbol
  * @args: arguments list
  *
  * Return: printed characters

@@ -10,26 +10,25 @@
 int _printf(const char *format, ...)
 {
 	va_list args;
-	int i, printed_char = 0;
+	int printed_char = 0;
 
 	if (format == NULL)
 		return (-1);
 
 	va_start(args, format);
-	i = 0;
 
-	while (format[i])
+	while (*format)
 	{
-		if (format[i] != '%')
+		if (*format != '%')
 		{
-			printed_char += print_char(format[i]);
+			printed_char += print_char(*format);
 		}
 		else
 		{
-			i++;
-			printed_char += test(format, i, args);
+			format++;
+			printed_char += test(format, args);
 		}
-		i++;
+		format++;
 	}
 	va_end(args);
 

@@ -11,14 +11,10 @@ int print_string(char *str)
 
 	int len = 0;
 
-	if (str != NULL)
+	while (*str != '\0')
 	{
-		while (str[len])
-		{
-			len++;
-		}
-		write(1, str, len);
+		write(1, str, 1);
+		len++;
 	}
-
 	return (len);
 }

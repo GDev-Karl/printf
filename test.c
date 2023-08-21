@@ -20,9 +20,10 @@ int test(const char *format, va_list args)
 			printed_chars += print_string(va_arg(args, char *));
 			break;
 		case '%':
-			printed_chars += print_percent();
+			printed_chars += print_char("%");
 			break;
 		default:
+			printed_chars += print_char('?');
 			break;
 	}
 	return (printed_chars);

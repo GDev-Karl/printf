@@ -2,7 +2,7 @@
 
 /**
  * print_string - print a string on the output
- * @str: string to print
+ * @str: string to be printed
  *
  * Return: the lenght of the string printed
  */

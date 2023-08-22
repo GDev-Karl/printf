@@ -1,5 +1,6 @@
 #ifndef __MAIN_H__
 #define __MAIN_H__
+#define BUFFER_SIZE 100
 
 #include <stdarg.h> /* for variadic macros */
 #include <unistd.h> /* for write function */

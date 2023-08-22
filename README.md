@@ -1,1 +1,1 @@
-## 0x11. C - printf proj
+## 0x11. C - printf proje

@@ -1,1 +1,1 @@
-## 0x11. C - printf grou project
+## 0x11. C - printf group project

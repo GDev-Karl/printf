@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_int - prints integers and decimals
+ * print_int - prints numbers
  * @num: number to be print
  *
  * Return: number of digits

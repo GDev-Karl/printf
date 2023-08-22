@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_int - prints integers and decimals
- * @num: number to be printed
+ * @num: number to be print
  *
  * Return: number of digits
  */
@@ -11,6 +11,7 @@ int print_int(int num)
 	char buffer[BUFFER_SIZE];
 	int i, len = 0;
 	int printed_digit = 0;
+	
 	if (num == 0)
 	{
 		printed_digit += print_char('0');

@@ -23,7 +23,6 @@ int _printf_decimal(const char *format, ...)
 			chara_count++;
 		}
 		else
-		format++;
 		{
 			if (*format == '\0')
 				break;
@@ -34,6 +33,7 @@ int _printf_decimal(const char *format, ...)
 			if (*format  == 'i')
 				chara_count = chara_count + print_dec(*format);
 		}
+		format++;
 	}
 	va_end(list);
 	return (chara_count);

@@ -23,8 +23,8 @@ int _printf_decimal(const char *format, ...)
 			chara_count++;
 		}
 		else
+		format++;
 		{
-			format++;
 			if (*format == '\0')
 				break;
 			if (*format  == '%')

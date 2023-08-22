@@ -13,6 +13,8 @@ int test(const char *format, va_list args)
 
 	switch (*format)
 	{
+		case '\0':
+			break;
 		case 'c':
 			printed_chars += print_char((char)va_arg(args, int));
 			break;

@@ -10,7 +10,6 @@ int test(const char *format, va_list args);
 int print_string(char *str);
 int print_percent(void);
 int print_char(char ch);
-int print_int(int i);
 int _printf_decimal(const char *format, ...);
 int print_int(int num);
 

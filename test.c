@@ -22,6 +22,12 @@ int test(const char *format, va_list args)
 		case '%':
 			printed_chars += print_percent();
 			break;
+		case 'd':
+			printed_chars += print_int(va_arg(args, int));
+			break;
+		case 'i':
+			printed_chars += print_int(va_arg(args, int));
+			break;
 		default:
 			printed_chars += print_percent();
 			printed_chars += print_char(*format++);
